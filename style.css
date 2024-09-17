@@ -54,3 +54,20 @@ footer {
   width: 100%;
   bottom: 0;
 }
+
+.responsive-image {
+  width: 100%;
+  height: auto;
+  max-width: 800px; /* Dies ist die maximale Breite, die das Bild haben darf */
+  display: block;
+  margin: 0 auto; /* Zentriert das Bild */
+}
+
+/* Optional: Für den Fall, dass du alle Bilder im Blog anpassen möchtest */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
