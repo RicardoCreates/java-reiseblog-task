@@ -24,6 +24,10 @@ nav a {
   font-weight: bold;
 }
 
+nav a:hover {
+  color: #101010;
+}
+
 main {
   padding: 20px;
   max-width: 800px;
@@ -86,7 +90,11 @@ header.dark-mode {
 }
 
 nav a.dark-mode {
-  color: #db3434; /* Linkfarbe im Dark Mode */
+  color: #34dbb4; /* Linkfarbe im Dark Mode */
+}
+
+nav a.dark-mode:hover {
+  color: white;
 }
 
 main.dark-mode {
@@ -126,12 +134,12 @@ button#toggle-dark-mode:hover {
 
 /* Dark Mode Styles für den Button */
 body.dark-mode button#toggle-dark-mode {
-  background-color: #db3434; /* Rote Farbe für den Dark Mode */
+  background-color: #34DBB4FF; /* Rote Farbe für den Dark Mode */
   color: black;
 }
 
 /* Hover-Effekt für Dark Mode */
 body.dark-mode button#toggle-dark-mode:hover {
-  background-color: #c53030; /* Etwas dunkleres Rot im Dark Mode */
+  background-color: #00ffef; /* Etwas dunkleres Rot im Dark Mode */
 }
 
