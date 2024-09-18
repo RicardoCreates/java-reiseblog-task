@@ -27,7 +27,7 @@ nav a {
 main {
   padding: 20px;
   max-width: 800px;
-  margin: 0 auto;
+  margin: 80px auto;
   background-color: white;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -58,16 +58,80 @@ footer {
 .responsive-image {
   width: 100%;
   height: auto;
-  max-width: 800px; /* Dies ist die maximale Breite, die das Bild haben darf */
+  max-width: 800px;
   display: block;
-  margin: 0 auto; /* Zentriert das Bild */
+  margin: 0 auto;
 }
 
-/* Optional: Für den Fall, dass du alle Bilder im Blog anpassen möchtest */
+/*für weitere Bilder */
 img {
   max-width: 100%;
   height: auto;
   display: block;
   margin: 0 auto;
+}
+
+/*ChatGPT Spielerein :) */
+
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #101010;
+  color: #e0e0e0;
+}
+
+header.dark-mode {
+  background-color: #303030;
+  color: white;
+}
+
+nav a.dark-mode {
+  color: #db3434; /* Linkfarbe im Dark Mode */
+}
+
+main.dark-mode {
+  background-color: #181818; /* Main-Bereich dunkler */
+  color: #e0e0e0;
+  box-shadow: 0 0 10px rgba(255,255,255,0.1); /* Hellerer Schatten im Dark Mode */
+}
+
+h2.dark-mode {
+  color: #e0e0e0; /* Überschriften heller im Dark Mode */
+}
+
+footer.dark-mode {
+  background-color: #303030;
+  color: white;
+}
+
+/*Button */
+/* Styles für den Dark Mode Toggle Button */
+button#toggle-dark-mode {
+  padding: 10px 20px;
+  margin: 20px;
+  background-color: #3498db; /* Blaue Farbe für den Light Mode */
+  color: white;
+  border: none;
+  border-radius: 25px; /* Runde Ecken */
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Weiche Übergänge */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Schattierung für einen 3D-Effekt */
+}
+
+/* Hover-Effekt für den Button */
+button#toggle-dark-mode:hover {
+  background-color: #2980b9; /* Etwas dunkleres Blau beim Hover */
+}
+
+/* Dark Mode Styles für den Button */
+body.dark-mode button#toggle-dark-mode {
+  background-color: #db3434; /* Rote Farbe für den Dark Mode */
+  color: black;
+}
+
+/* Hover-Effekt für Dark Mode */
+body.dark-mode button#toggle-dark-mode:hover {
+  background-color: #c53030; /* Etwas dunkleres Rot im Dark Mode */
 }
 

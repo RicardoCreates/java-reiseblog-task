@@ -10,6 +10,7 @@
 
 <header>
   <h1>Willkommen zu meinem Travel Blog</h1>
+  <button id="toggle-dark-mode">Dark Mode</button>
 </header>
 
 <nav>
@@ -44,6 +45,23 @@
 <footer>
   &copy; 2024 Mein Travel Blog. Alle Rechte vorbehalten.
 </footer>
+<!--GPT SCRIPT FÜR DARKMODE-->
+<script>
+  const toggleButton = document.getElementById('toggle-dark-mode');
+  const body = document.body;
 
+  toggleButton.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+
+    const elements = document.querySelectorAll('header, nav a, main, h2, footer');
+    elements.forEach(el => el.classList.toggle('dark-mode'));
+    // Button-Text je nach aktuellem Modus ändern
+    if (body.classList.contains('dark-mode')) {
+      toggleButton.textContent = 'Light Mode';
+    } else {
+      toggleButton.textContent = 'Dark Mode';
+    }
+  });
+</script>
 </body>
 </html>
